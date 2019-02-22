@@ -1,86 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|stylesheet');
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0; padding: 0;
-}
-
-.page-header {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, .95) 0%, rgba(255, 255, 255, .95) 80%);
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  letter-spacing: 0.1rem;
-  z-index: 1
-}
-
-main:nth-of-type(1) {
-  margin-top: 200px;
-}
-
-.image-container {  
-  position: static;
-  text-align: center;
-}
-
-.headshot-image {
-  width: 15%;
-  height: 15%;
-  border: solid 4px;
-  border-radius: 50%;
-  border-color: black;
+article {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
   }
-
-.autograph-image {
-  width: 100px;
-}
-
-h1 {
-  color: black;
-  font-family: 'Comfortaa', cursive;
-  font-size: 80px;
-  text-align: center;
-}
-
-h2 {
-  color: black;
-  font-family: 'Comfortaa', cursive;
-  font-size: 24px; 
-  text-align: center;
-  top: 190px;
-}
-
-.page-content {
-  font-family: 'Comfortaa', cursive;
-  text-align: center; 
-}
-table {
-  margin: auto;
-  border: 2px solid black;
-}
-th, td {
-  border: 1.5px solid black;
-}
-
-#msg {
-  font-family: arial;
-  width: 100px;
-  height: 20px
-    
-}
-button {
-  background-color: black;
-  color: white;
+  
+  .article-date {
+    float: left;
+    font-weight: bold;
+    margin: 0 2rem 1rem 0;
   }
-
-iframe {
-  border: 3px solid black;
-}
-
-.image-linkedin {
-  width: 60px;
-  height: 20px;
+  
+  .quote {
+    width: 300px;
+    font-size: 200%;
+    position: relative;
+    display: inline-block;
+    font-style: italic;
+  }
+  
+  .quote::before {
+    content: open-quote;
+    font-size: 750%;
+    font-weight: bold;
+    position: absolute;
+    font-family: serif;
+    color: #ccc;
+    z-index: -1;
+  }
+  
+  .quote::after {
+    content: close-quote;
+  }
+  
+  .quote-right {
+    float: right;
+    margin: 1rem -8rem 2rem 2rem;
+    border-left: 4px solid green;
+    padding-left: 2rem;
+  }
+  .quote-right::before {
+    left: 1rem;
+    top: -6rem;
+  }
+  
+  .quote-left {
+    float: left;
+    margin: 1rem 2rem 2rem -8rem;
+    border-right: 4px solid green;
+    padding-right: 2rem;
+    text-align: right;
+  }
+  
+  .quote-left::before {
+    content: open-quote;
+    right: 1rem;
+    top: -5rem;
+  }
+  
+  .image-left {
+    float: left;
+    margin: 2rem 2rem 2rem -8rem;
+  }
+  
+  .image-caption {
+    background: tomato;
+    padding: 5px;
+    color: white;
+  }
