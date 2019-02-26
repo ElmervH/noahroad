@@ -12,11 +12,12 @@ time {
 
 .quote-right {
   float: right;
-  margin: 20px 10px 0px 0px;
+  margin: 20px 10px 0px 20px;
   border-left: 4px solid blue;
   padding-left: 2rem;
   position: relative;
   width: 250px;
+  font-size: 30px;
 }
 
 .quote-left {
@@ -25,11 +26,15 @@ time {
   border-right: 4px solid blue;
   padding-right: 2rem;
   position: relative;
+  font-size: 30px;
+  width: 250px;
+
+
 }
 
 .photo-left {
  float: left;
- margin: 20px 0px 0px -80px
+ margin: 20px 10px 0px -80px
  
 }
 
